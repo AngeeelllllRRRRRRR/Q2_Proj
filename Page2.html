@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chicken Meals</title>
+<style type="text/css">
+		.titolo{
+			font-family: cursive;
+			text-shadow: 2px 2px #fff380;
+			font-size: 70px;
+      color: #FFA600;
+      letter-spacing: 
+		}
+
+		.head{
+			padding: 40px;
+			background-color: #F6Be00;
+			color: white;
+		}
+
+		.img{
+			border-radius: 20%;
+			border: dashed #FFa500 10px;
+		}
+
+		.label{
+			font-family: cursive;
+			font-size: 20px;
+
+		}
+
+    .pname
+    {
+      font-size: 28px;
+      text-decoration: none;
+      font-family: cursive;
+    }
+
+    .price
+    {
+      font-size: 18px;
+      color: black;
+    }
+
+    .paa{
+      padding: 10px 30px;
+      background-color: #F6Be00;
+    }
+	</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  /*
+  background-color: #F6Be00;
+  */
+  background-image: url(bg1.jpg);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/*
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+*/
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+
+  .himg
+  {width: 185px; 
+  height: 90px;}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+ .container {
+  position: relative;
+  width: 80%;
+}
+
+		.overlay {
+  	position: absolute;
+ 	 top: 0;
+ 	 bottom: 0;
+ 	 left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: #F0FFF0;
+  	border-radius: 20%;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+
+
+* {
+  box-sizing: border-box;
+}
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 310px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+/*rgba(0,0,0,0.2);*/
+
+.img {
+  border-radius: 10px 10px 0 0;
+  /*background-image: url(bg1.jpg);*/
+  border: solid #ffdb58 10px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button2 {
+  border-radius: 15px;
+  background-color: #ffa500;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px;
+  width: 170px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 9px #999;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+	</style>
+</head>
+<body style="background-color: white">
+<div class="header">
+  <img src="logo2.png" style="width: 185px; height: 90px;" class="himg">
+  <div class="header-right">
+    <br>
+    <a class="active" href="FV_ICT9Ruby_Q2Project_Ringor_Angelie.html">Home</a>
+    <a href="rate.html">Rate Us</a>
+    <a href="ref.html">Sources</a>
+  </div>
+</div>
+
+<center><h1 class="titolo">Chicken Meals</h1></center>
+
+
+<center><table cellpadding="3"; cellspacing="3"; border="0"; style="margin: 0; background-color: white; width: 90%">
+
+<tr style="max-width: 350px;  ">
+<td><center><div class="card">
+  <img src="c3.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>1pc. Chicken Mcdo with Rice</b></h4>
+    <h3 class="price">Original-₱113.00, Spicy-₱116.00</h3> 
+    <p>1 piece of crispy, golden brown chicken that’s tender and juicy with steaming rice</p> 
+  </div></center>
+</div></td></center>
+
+<td style="max-width: 350px"><center><div class="card">
+  <img src="c5.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>2pc. Chicken Mcdo with Rice</b></h4>
+    <h3 class="price">Original-₱194.00, Spicy-₱197.00</h3>
+    <p>2 pieces of crispy, golden brown chicken that's tender and juicy with steaming rice.</p>
+  </div></center>
+</div></center></td>
+
+<td style="max-width: 350px; "><center><div class="card">
+  <img src="c4.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>McCrispy Chicken Fillet with Rice</b></h4> 
+    <h3 class="price">₱85.00</h3>
+    <p>Crispy chicken fillet with steaming rice.</p> 
+  </div>
+</div></center></div></td>
+</tr>
+<br><br>
+
+<tr>
+    <td style="width: 40%;">
+      <center><a href="order.html"><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+    <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+
+       <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+  </tr>
+</table></center>
+<br><br>
+
+
+<center><table cellpadding="3"; cellspacing="3"; border="0"; style="margin: 0; background-color: white; width: 70%">
+
+<tr style="max-width: 350px;  ">
+<td><center><div class="card">
+  <img src="c8.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>1pc. Chicken Mcdo with McSpaghetti</b></h4>
+    <h3 class="price">Original-₱149.00, Spicy-₱152.00</h3> 
+    <p>1 piece of crispy, golden brown chicken that's tender and juicy served with the classic spaghetti with ground beef and signature sauce.</p><br> 
+  </div></center>
+</div></td></center>
+
+<td style="max-width: 350px"><center><div class="card">
+  <img src="c9.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>6pc. Chicken McNuggers with Fries</b></h4>
+    <h3 class="price">Original-₱157.00</h3>
+    <p>6 golden brown chicken pieces that are juicy on the inside and slightly crispy on the outside which you can dip in BBQ or Sweet 'n' Sour sauce with a classic bunch of crunchy French fries.</p>
+  </div></center>
+</div></center></td>
+
+</tr>
+
+<tr>
+    <td style="width: 40%;">
+      <center><a href="order.html"><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+    
+
+       <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+  </tr>
+
+<br><br>
+</table></center>
+<br><br><br><br>
+
+<footer class="paa">
+ <br>
+  <center><a href="FV_ICT9Ruby_Q2Project_Ringor_Angelie.html"; style="font-weight: bolder; font-family:monospace; font-size: 25px; color: white;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="rate.html"; style="font-weight: bolder;font-family: monospace; font-size: 25px; color: white;">RATE US</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="ref.html"; style="font-weight: bolder; font-family: monospace; font-size: 25px; color: white;">SOURCES</a></center>
+<br>
+ 
+
+</footer>
+</body>
+</html>

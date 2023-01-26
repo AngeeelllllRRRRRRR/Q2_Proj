@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Burgers</title>
+<style type="text/css">
+		.titolo{
+			font-family: cursive;
+			text-shadow: 2px 2px #fff380;
+			font-size: 70px;
+      color: #FFA600;
+      letter-spacing: 
+		}
+
+		.head{
+			padding: 40px;
+			background-color: #F6Be00;
+			color: white;
+		}
+
+		.img{
+			border-radius: 20%;
+			border: dashed #FFa500 10px;
+		}
+
+		.label{
+			font-family: cursive;
+			font-size: 20px;
+
+		}
+
+    .pname
+    {
+      font-size: 28px;
+      text-decoration: none;
+      font-family: cursive;
+    }
+
+    .price
+    {
+      font-size: 18px;
+      color: black;
+    }
+
+    .paa{
+      padding: 10px 30px;
+      background-color: #F6Be00;
+    }
+	</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  /*
+  background-color: #F6Be00;
+  */
+  background-image: url(bg1.jpg);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/*
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+*/
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+
+  .himg
+  {width: 185px; 
+  height: 90px;}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+ .container {
+  position: relative;
+  width: 80%;
+}
+
+		.overlay {
+  	position: absolute;
+ 	 top: 0;
+ 	 bottom: 0;
+ 	 left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: #F0FFF0;
+  	border-radius: 20%;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+
+
+* {
+  box-sizing: border-box;
+}
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 310px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+/*rgba(0,0,0,0.2);*/
+
+.img {
+  border-radius: 10px 10px 0 0;
+  /*background-image: url(bg1.jpg);*/
+  border: solid #ffdb58 10px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button2 {
+  border-radius: 15px;
+  background-color: #ffa500;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px;
+  width: 170px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 9px #999;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+	</style>
+</head>
+<body style="background-color: white">
+<div class="header">
+  <img src="logo2.png" style="width: 185px; height: 90px;" class="himg">
+  <div class="header-right">
+    <br>
+    <a class="active" href="FV_ICT9Ruby_Q2Project_Ringor_Angelie.html">Home</a>
+    <a href="rate.html">Rate Us</a>
+    <a href="ref.html">Sources</a>
+  </div>
+</div>
+
+<center><h1 class="titolo">Burgers</h1></center>
+
+
+<center><table cellpadding="3"; cellspacing="3"; border="0"; style="margin: 0; background-color: white; width: 90%">
+
+<tr style="max-width: 350px;  ">
+<td><center><div class="card">
+  <img src="b2.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>Big Mac</b></h4>
+    <h3 class="price">₱186.00</h3> 
+    <p>A double layer of sear-sizzled, juicy 100% pure beef mingled with special sauce on a sesame seed bun and topped with melty American cheese, crisp lettuce, minced onions, and crisp dill pickles.</p><br>
+  </div></center>
+</div></td></center>
+
+<td style="max-width: 350px"><center><div class="card">
+  <img src="b3.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>Burger McDo</b></h4>
+    <h3 class="price">₱94.00</h3>
+    <p>Our all-time classic burger made even better. Now with a beefier patty and a sweeter, tastier sauce. </p><br><br><br><br>
+  </div></center>
+</div></center></td>
+
+<td style="max-width: 350px; "><center><div class="card">
+  <img src="b4.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>Cheeseburger Deluxe</b></h4> 
+    <h3 class="price">₱132.00</h3>
+    <p>It’s the classic cheeseburger you love, made even more tasty with tomato, lettuce, and mayo for a deluxe kick, on perfectly toasty buns. &nbsp;&nbsp;</p><br>
+  </div>
+</div></center></div></td>
+</tr>
+<br><br>
+
+<tr>
+    <td style="width: 40%;">
+      <center><a href="order.html"><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+    <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+
+       <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+  </tr>
+</table></center>
+<br><br>
+
+
+<center><table cellpadding="3"; cellspacing="3"; border="0"; style="margin: 0; background-color: white; width: 90%">
+
+<tr style="max-width: 350px;  ">
+<td><center><div class="card">
+  <img src="b5.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>Cheeseburger</b></h4>
+    <h3 class="price">₱114.00</h3> 
+    <p>100% pure beef patty seasoned with a pinch of salt and pepper, topped with a tangy pickle, chopped onions, ketchup, mustard, and a slice of melty American cheese on perfectly toasty buns.</p><br> 
+  </div></center>
+</div></td></center>
+
+<td style="max-width: 350px"><center><div class="card">
+  <img src="b6.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>McCrispy Chicken Sandwich</b></h4>
+    <h3 class="price">₱103.00</h3>
+    <p>Made of a juicy chicken patty topped with creamy mayo, sandwiched in a soft tasty bun.</p>
+  </div></center>
+</div></center></td>
+
+<td style="max-width: 350px; "><center><div class="card">
+  <img src="b7.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>McChicken Sandwich</b></h4> 
+    <h3 class="price">Small-₱146.00, Medium-₱166.00</h3>
+    <p>Served on a perfectly toasty bun, with crispy chicken fillet topped with mayonnaise and shredded iceberg lettuce. &nbsp;&nbsp;</p><br> 
+  </div>
+</div></center></center></div></td>
+</tr>
+<br><br>
+
+<tr>
+    <td style="width: 40%;">
+      <center><a href="order.html"><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+    <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+
+       <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+  </tr>
+</table></center>
+<br><br>
+
+<center><table cellpadding="3"; cellspacing="3"; border="0"; style="margin: 0; background-color: white; width: 70%">
+
+<tr style="max-width: 350px;  ">
+<td><center><div class="card">
+  <img src="b8.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>Quarter Pounder with Cheese</b></h4>
+    <h3 class="price">₱186.00</h3> 
+    <p>Features a ¼ lb. of 100% fresh beef seasoned with a pinch of salt and pepper, and topped with slivered onions, tangy pickles, and two slices of melty cheese on a sesame seed bun.</p><br> 
+  </div></center>
+</div></td></center>
+
+<td style="max-width: 350px"><center><div class="card">
+  <img src="b9.jpeg" alt="Avatar" style="width:100%" class="img">
+  <center><div class="container">
+    <h4 class="pname"><b>Cheesy Burger McDo</b></h4>
+    <h3 class="price">₱104.00</h3>
+    <p>Classic Savory Burger McDo plus a slice of creamy American cheese and sweet, tangy sauce.</p><br><br><br><br><br><br>
+  </div></center>
+</div></center></td>
+
+</tr>
+
+<tr>
+    <td style="width: 40%;">
+      <center><a href="order.html"><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+    
+
+       <td style="width: 40%;">
+      <a href="order.html"><center><button class="button2"><span>Add to Cart</span></button></a></center><br></td>
+  </tr>
+
+<br><br>
+</table></center>
+<br><br><br><br>
+
+<footer class="paa">
+ <br>
+  <center><a href="FV_ICT9Ruby_Q2Project_Ringor_Angelie.html"; style="font-weight: bolder; font-family:monospace; font-size: 25px; color: white;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="rate.html"; style="font-weight: bolder;font-family: monospace; font-size: 25px; color: white;">RATE US</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="ref.html"; style="font-weight: bolder; font-family: monospace; font-size: 25px; color: white;">SOURCES</a></center>
+<br>
+ </footer>
+</body>
+</html>
